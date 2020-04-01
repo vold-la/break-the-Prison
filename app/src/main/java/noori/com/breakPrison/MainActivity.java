@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
         hammer.setX(hammerX);
         hammer.setY(hammerY);
 
-        // Pink
         if (!dynamite_flag && Count % 10000 == 0) {
             dynamite_flag = true;
             dynamiteY = -20;
@@ -262,11 +261,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Exit(View view) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            finishAndRemoveTask();
-        } else {
             finish();
-        }
     }
 
 }
