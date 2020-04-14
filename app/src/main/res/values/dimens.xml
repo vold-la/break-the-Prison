@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_height">60dp</dimen>
+    <dimen name="spotlight_width">60dp</dimen>
+    <dimen name="prisoner_dimen">44dp</dimen>
+    <dimen name="cop_dimen">30dp</dimen>
+    <dimen name="hammer_dimen">30dp</dimen>
+    <dimen name="spade_dimen">40dp</dimen>
+    <dimen name="button_margin">20dp</dimen>
+    <dimen name="hs_margin">80dp</dimen>
+
+
+
+</resources>

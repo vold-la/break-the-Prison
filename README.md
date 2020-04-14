@@ -1,10 +1,12 @@
-# break-the-prison
-It is simple game where the avatar is a prisoner and he has to collect tools, if he strikes with torch light\
-then prison wall gets broader on each strike and at final point when he has no place to move then his body \
-gets ripped off. Also he if he collects explosive then the wall get a bit narrower.\
+# break-prison
+It is simple game where the avatar is a prisoner and he has to collect tools to break the prison,prison wall gets narrower on each striking \
+with torch light or cops light and at final point when he has no place to move then his body gets ripped off. \
+ Also the wall gets broader on collecting spade.\
 The controls are,if user press on screen then the avatar will move to right and on release it will move to left of screen. \
-![](pics/1.gif) ![](pics/2.gif) \
+\
+![](pics/gif1.gif) ![](pics/gif2.gif) \
 (Play and dont miss the fun :D) \
 
-The graphics are not that good at the moment since I made it in hurry.\
-ToDO-improve graphics and sounds,create story.
+\
+ToDO - improve graphics ,create story, create easy/medium/hard mode and more menu.
+Only Image background is taken from shutterstocks.

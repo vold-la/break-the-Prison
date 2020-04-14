@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Break Prison</string>
+    <string name="desc">Image</string>
+    <string name="how_to_play">A spade,hammer and cop siren will be falling from the ceiling\n
+        \n
+    You have to collect the hammer in order to break the prison\n
+        \n
+    Hitting cop siren will shrink the wall size whereas collecting spade will give extra points and expand the prison wall. \n
+    Also make sure you dont get caught by the spotlight which gets cast on you randomly.\n
+    \n
+        Go break the jam :) </string>
+    <string name="cancel">Yeah!! Got it</string>
+    <string name="mute">Mute</string>
+    <string name="sound">Sound</string>
+    <string name="hs">High Score : </string>
+    <string name="score">Score : </string>
+    <string name="start">START</string>
+    <string name="Exit">EXIT</string>
+    <string name="help">HELP</string>
+
 </resources>

@@ -9,56 +9,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bgbk">
+    android:background="@drawable/background_wall">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:orientation="horizontal"
+        android:background="#1979A9">
+
+        <Button
+            android:id="@+id/sound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mute"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#6b4984"
+            android:background="#1979A9"/>
 
     <TextView
         android:id="@+id/score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Score : 0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="@string/score"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#6b4984"
-        android:paddingVertical="14dp"
-        android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:background="#808080"/>
+        android:background="#1979A9"/>
+
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/Frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/prison">
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/prison"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/prison"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/desc"/>
+
+        <ImageView
+            android:id="@+id/spotlight"
+            android:layout_width="@dimen/spotlight_width"
+            android:layout_height="530dp"
+            android:src="@drawable/spotlight"
+            android:scaleType="fitXY"
+            android:layout_gravity="top|center"
+            android:contentDescription="@string/desc"/>
 
         <ImageView
             android:id="@+id/prisoner"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="@dimen/prisoner_dimen"
+            android:layout_height="@dimen/prisoner_dimen"
             android:src="@drawable/right"
             android:layout_gravity="bottom"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:contentDescription="@string/desc"/>
 
         <ImageView
-            android:id="@+id/ray"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ray"
-            android:visibility="invisible"/>
+            android:id="@+id/cop"
+            android:layout_width="@dimen/cop_dimen"
+            android:layout_height="@dimen/cop_dimen"
+            android:src="@drawable/cop"
+            android:visibility="invisible"
+            android:contentDescription="@string/desc"/>
 
         <ImageView
             android:id="@+id/hammer"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="@dimen/hammer_dimen"
+            android:layout_height="@dimen/hammer_dimen"
             android:src="@drawable/hammer"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:contentDescription="@string/desc"/>
 
         <ImageView
-            android:id="@+id/dynamite"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/dynamite"
-            android:visibility="invisible"/>
+            android:id="@+id/spade"
+            android:layout_width="@dimen/spade_dimen"
+            android:layout_height="@dimen/spade_dimen"
+            android:src="@drawable/spade"
+            android:visibility="invisible"
+            android:contentDescription="@string/desc"/>
 
         <LinearLayout
             android:id="@+id/firstLayout"
@@ -71,25 +110,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Break the prison"
+                android:text="@string/app_name"
                 android:textColor="#6b4984"
                 android:textSize="24sp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="@dimen/button_margin"/>
 
             <TextView
                 android:id="@+id/hS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="High Score : 100"
+                android:text="@string/hs"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#6b4984"
-                android:layout_marginTop="80dp"/>
+                android:layout_marginTop="@dimen/hs_margin"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="START"
+                android:text="@string/start"
                 android:background="#6b4984"
                 android:layout_marginTop="60dp"
                 android:onClick="start"/>
@@ -97,9 +136,17 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Exit"
+                android:text="@string/help"
                 android:background="#6b4984"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/button_margin"
+                android:onClick="help"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Exit"
+                android:background="#6b4984"
+                android:layout_marginTop="@dimen/button_margin"
                 android:onClick="Exit"/>
 
         </LinearLayout>
